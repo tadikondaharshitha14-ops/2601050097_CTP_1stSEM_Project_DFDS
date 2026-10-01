@@ -37,10 +37,13 @@ Scan Files
        ↓
        
 Calculate SHA-256 Hash
+
        ↓
 Divide Files into Groups
+
        ↓
 Multiprocessing
+
        ↓
 Compare Hashes
        ↓
