@@ -609,3 +609,76 @@ Git / GitHub
 
 
 
+
+
+
+
+
+
+
+
+**⚙️ How the System Works**
+
+The system follows the process below:
+
+Distributed Nodes
+       │
+       ↓
+Scan Files
+       │
+       ↓
+Collect File Paths
+       │
+       ↓
+Divide Files into Groups
+       │
+       ↓
+Multiprocessing
+
+       │
+       ↓
+       
+Calculate SHA-256 Hash
+       │
+       ↓
+Compare Hashes
+       │
+       ↓
+Identify Duplicate Files
+       │
+       ↓
+Generate Report
+       │
+       ↓
+Calculate Storage Saved
+       │
+       ↓
+Ask User Before Deletion
+🔐 SHA-256 Hashing
+
+The project uses SHA-256 to generate a content hash for every file.
+
+For example:
+
+node1/file1.txt
+Content: Hello World
+
+        ↓
+
+SHA-256 Hash
+
+        ↓
+
+a591a6d40bf420404a011733cfb7b190d62c65bf0bcda32b57b277d9ad9f146e
+
+If another file contains the same content, it produces the same hash.
+
+Example:
+
+node1/file1.txt → Hello World → Hash A
+
+node2/file3.txt → Hello World → Hash A
+
+Therefore, file3.txt is identified as a duplicate.
+
+
