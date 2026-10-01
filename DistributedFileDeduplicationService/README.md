@@ -574,3 +574,38 @@ The system successfully identified duplicate files in the test environment and c
 
 GitHub: `<your-github-profile-link>`
 
+**Distributed File Deduplication Service**
+
+A Python-based distributed file deduplication system that detects duplicate files across multiple storage nodes using SHA-256 content hashing, Object-Oriented Programming, Divide-and-Conquer, and Multiprocessing.
+
+**📌 Problem Statement**
+
+Detect and eliminate duplicate files across a large distributed file store.
+
+In distributed storage systems, the same file may be stored multiple times on different nodes. This results in unnecessary storage usage.
+
+This project identifies duplicate files by comparing their content hashes and generates reports showing duplicate files and storage space that can be saved.
+
+**🎯 Objectives**
+
+Scan files from multiple distributed nodes.
+Calculate SHA-256 hashes for files.
+Detect duplicate files based on content.
+Apply Object-Oriented Programming (OOP).
+Divide files into smaller groups using Divide-and-Conquer.
+Use multiprocessing for parallel file processing.
+Generate a deduplication report.
+Calculate storage space before and after deduplication.
+Provide safe deletion of duplicate files with user confirmation.
+
+**🛠️ Technologies Used**
+Python 3
+SHA-256 Hashing
+Object-Oriented Programming (OOP)
+Divide-and-Conquer
+Multiprocessing
+VS Code
+Git / GitHub
+
+
+
